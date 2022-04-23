@@ -1,0 +1,8 @@
+#!/bin/bash
+#This script is executed every time your instance is spawned.
+
+
+## Install tmux logging & set tmux config
+sudo git clone https://github.com/tmux-plugins/tmux-logging /opt/tmux-logging
+## NOTE: replace user_dir with your pwnbox user
+sudo wget -O /home/user_dir/.tmux.conf https://raw.githubusercontent.com/OpalSec/htb_setup/main/.tmux.conf
